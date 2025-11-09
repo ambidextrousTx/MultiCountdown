@@ -1,0 +1,27 @@
+{
+  "name": "multicountdown",
+  "version": "1.0.0",
+  "description": "Electron app to host multiple countdown timers",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ambidextrousTx/MultiCountdown.git"
+  },
+  "author": "Ravi Sinha",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ambidextrousTx/MultiCountdown/issues"
+  },
+  "homepage": "https://github.com/ambidextrousTx/MultiCountdown#readme",
+  "dependencies": {
+    "electron": "^38.4.0"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "jest-electron-runner": "^0.0.2"
+  }
+}
