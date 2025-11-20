@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Countdown Tracker</title>
+  <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>⏱️ Countdown Tracker</h1>
+      <p class="subtitle">Track multiple countdowns simultaneously</p>
+    </header>
+
+    <div class="countdowns-grid">
+      <div class="countdown-card" id="countdown-1">
+        <div class="countdown-header">
+          <input type="text" class="countdown-name" placeholder="Countdown 1" value="Countdown 1">
+        </div>
+        
+        <div class="countdown-display">
+          <div class="time-unit">
+            <div class="time-value" data-days>000</div>
+            <div class="time-label">Days</div>
+          </div>
+          <div class="time-separator">:</div>
+          <div class="time-unit">
+            <div class="time-value" data-hours>00</div>
+            <div class="time-label">Hours</div>
+          </div>
+          <div class="time-separator">:</div>
+          <div class="time-unit">
+            <div class="time-value" data-minutes>00</div>
+            <div class="time-label">Minutes</div>
+          </div>
+          <div class="time-separator">:</div>
+          <div class="time-unit">
+            <div class="time-value" data-seconds>00</div>
+            <div class="time-label">Seconds</div>
+          </div>
+        </div>
+
+        <div class="countdown-controls">
+          <div class="input-group">
+            <label>Set Duration:</label>
+            <div class="duration-inputs">
+              <input type="number" class="duration-input" data-input-days placeholder="Days" min="0" max="365">
+              <input type="number" class="duration-input" data-input-hours placeholder="Hours" min="0" max="23">
+              <input type="number" class="duration-input" data-input-minutes placeholder="Minutes" min="0" max="59">
+              <input type="number" class="duration-input" data-input-seconds placeholder="Seconds" min="0" max="59">
+            </div>
+          </div>
+          <div class="button-group">
+            <button class="btn btn-start" data-start>Start</button>
+            <button class="btn btn-pause" data-pause disabled>Pause</button>
+            <button class="btn btn-reset" data-reset>Reset</button>
+          </div>
+        </div>
+
+        <div class="countdown-status" data-status>Ready to start</div>
+      </div>
+
+      <div class="countdown-card" id="countdown-2">
+        <div class="countdown-header">
+          <input type="text" class="countdown-name" placeholder="Countdown 2" value="Countdown 2">
+        </div>
+        
+        <div class="countdown-display">
+          <div class="time-unit">
+            <div class="time-value" data-days>000</div>
+            <div class="time-label">Days</div>
+          </div>
+          <div class="time-separator">:</div>
+          <div class="time-unit">
+            <div class="time-value" data-hours>00</div>
+            <div class="time-label">Hours</div>
+          </div>
+          <div class="time-separator">:</div>
+          <div class="time-unit">
+            <div class="time-value" data-minutes>00</div>
+            <div class="time-label">Minutes</div>
+          </div>
+          <div class="time-separator">:</div>
+          <div class="time-unit">
+            <div class="time-value" data-seconds>00</div>
+            <div class="time-label">Seconds</div>
+          </div>
+        </div>
+
+        <div class="countdown-controls">
+          <div class="input-group">
+            <label>Set Duration:</label>
+            <div class="duration-inputs">
+              <input type="number" class="duration-input" data-input-days placeholder="Days" min="0" max="365">
+              <input type="number" class="duration-input" data-input-hours placeholder="Hours" min="0" max="23">
+              <input type="number" class="duration-input" data-input-minutes placeholder="Minutes" min="0" max="59">
+              <input type="number" class="duration-input" data-input-seconds placeholder="Seconds" min="0" max="59">
+            </div>
+          </div>
+          <div class="button-group">
+            <button class="btn btn-start" data-start>Start</button>
+            <button class="btn btn-pause" data-pause disabled>Pause</button>
+            <button class="btn btn-reset" data-reset>Reset</button>
+          </div>
+        </div>
+
+        <div class="countdown-status" data-status>Ready to start</div>
+      </div>
+
+      <div class="countdown-card" id="countdown-3">
+        <div class="countdown-header">
+          <input type="text" class="countdown-name" placeholder="Countdown 3" value="Countdown 3">
+        </div>
+        
+        <div class="countdown-display">
+          <div class="time-unit">
+            <div class="time-value" data-days>000</div>
+            <div class="time-label">Days</div>
+          </div>
+          <div class="time-separator">:</div>
+          <div class="time-unit">
+            <div class="time-value" data-hours>00</div>
+            <div class="time-label">Hours</div>
+          </div>
+          <div class="time-separator">:</div>
+          <div class="time-unit">
+            <div class="time-value" data-minutes>00</div>
+            <div class="time-label">Minutes</div>
+          </div>
+          <div class="time-separator">:</div>
+          <div class="time-unit">
+            <div class="time-value" data-seconds>00</div>
+            <div class="time-label">Seconds</div>
+          </div>
+        </div>
+
+        <div class="countdown-controls">
+          <div class="input-group">
+            <label>Set Duration:</label>
+            <div class="duration-inputs">
+              <input type="number" class="duration-input" data-input-days placeholder="Days" min="0" max="365">
+              <input type="number" class="duration-input" data-input-hours placeholder="Hours" min="0" max="23">
+              <input type="number" class="duration-input" data-input-minutes placeholder="Minutes" min="0" max="59">
+              <input type="number" class="duration-input" data-input-seconds placeholder="Seconds" min="0" max="59">
+            </div>
+          </div>
+          <div class="button-group">
+            <button class="btn btn-start" data-start>Start</button>
+            <button class="btn btn-pause" data-pause disabled>Pause</button>
+            <button class="btn btn-reset" data-reset>Reset</button>
+          </div>
+        </div>
+
+        <div class="countdown-status" data-status>Ready to start</div>
+      </div>
+    </div>
+  </div>
+
+  <script src="src/renderer.js"></script>
+</body>
+</html>

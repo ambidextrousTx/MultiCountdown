@@ -2,10 +2,11 @@
   "name": "multicountdown",
   "version": "1.0.0",
   "description": "Electron app to host multiple countdown timers",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
     "test": "jest",
-    "start": "electron ."
+    "start": "electron .",
+    "dev": "electron . --inspect"
   },
   "repository": {
     "type": "git",
