@@ -5,6 +5,26 @@ const countdowns = [
   { id: 3, endTime: null, isPaused: false, remainingMs: 0, intervalId: null }
 ];
 
+// Theme switcher
+document.querySelectorAll('.theme-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const theme = btn.getAttribute('data-theme');
+    document.documentElement.setAttribute('data-theme', theme);
+    
+    // Update active state
+    document.querySelectorAll('.theme-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    
+    // Save theme preference
+    localStorage.setItem('countdown-theme', theme);
+  });
+});
+
+// Load saved theme
+const savedTheme = localStorage.getItem('countdown-theme') || 'default';
+document.documentElement.setAttribute('data-theme', savedTheme);
+document.querySelector(`[data-theme="${savedTheme}"]`)?.classList.add('active');
+
 // Initialize each countdown
 document.querySelectorAll('.countdown-card').forEach((card, index) => {
   const countdown = countdowns[index];
