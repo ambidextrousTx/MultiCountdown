@@ -281,7 +281,7 @@ header h1 {
 }
 
 .btn-start {
-  background: linear-gradient(135deg, var(--primary-color) 0%, var(--accent-color) 100%);
+  background: var(--primary-color);
   color: white;
 }
 
